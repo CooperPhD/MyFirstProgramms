@@ -1,26 +1,23 @@
 number = int(input())
-i = number%10 # еденицы
-x = number//10 # десятки
-roman = ''
+i = number%10
+x = number//10
 
 # Вычисляем десятки
 if x <=3:
-    roman += 'X' * (x - 5)
+    print('X' * (x - 5), end='')
 elif x == 4:
-    roman += 'XL'
+    print('XL', end='')
 elif x <=8:
-    roman += 'L' + 'X' * (x - 5)
+    print('L' + 'X' * (x - 5), end='')
 elif x == 9:
-    roman += 'XC'
+    print('XC', end='')
 
 # Вычисляем еденицы
 if  0 < i <= 3:
-    roman += 'I' * i
+    print('I' * i)
 elif i == 4:
-    roman += 'IV'
+    print('IV')
 elif i <=8:
-    roman += 'V' + 'I' * (i - 5)
+    print('V' + 'I' * (i - 5))
 elif i == 9:
-    roman += 'IX'
-
-print(roman)
+    print('IX')
