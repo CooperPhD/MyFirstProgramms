@@ -1,2 +1,5 @@
-s = "Another string write"
-print(type(s.split()), '\n', s)
+name = input()
+if name:
+    print('Hello,', name)
+else:
+    print('Hello, anon')
