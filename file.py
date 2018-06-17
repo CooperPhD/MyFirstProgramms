@@ -1,22 +1,23 @@
 number = int(input())
+i = number%10
+x = number//10
 
 # Вычисляем десятки
-if number//10 <=3:
-    print('X' * (number// 10 - 5), end='')
-elif number//10 == 4:
+if x <=3:
+    print('X' * (x - 5), end='')
+elif x == 4:
     print('XL', end='')
-elif number//10 <=8:
-    print('L' + 'X' * (number// 10 - 5), end='')
-elif number//10 == 9:
+elif x <=8:
+    print('L' + 'X' * (x - 5), end='')
+elif x == 9:
     print('XC', end='')
 
-number = number % 10
 # Вычисляем еденицы
-if  0 < number <= 3:
-    print('I' * number)
-elif number == 4:
+if  0 < i <= 3:
+    print('I' * i)
+elif i == 4:
     print('IV')
-elif number <=8:
-    print('V' + 'I' * (number - 5))
-elif number == 9:
+elif i <=8:
+    print('V' + 'I' * (i - 5))
+elif i == 9:
     print('IX')
