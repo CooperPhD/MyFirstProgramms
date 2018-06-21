@@ -5,7 +5,7 @@ roman = ''
 
 # Вычисляем десятки
 if x <=3:
-    roman += 'X' * (x - 5)
+    roman += 'X' * x
 elif x == 4:
     roman += 'XL'
 elif x <=8:
@@ -24,3 +24,4 @@ elif i == 9:
     roman += 'IX'
 
 print(roman)
+#TODO: Сделать для трехзначиныхмчисел
