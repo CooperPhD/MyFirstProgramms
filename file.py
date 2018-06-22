@@ -1,10 +1,11 @@
 number = int(input())
-i = number%10 # еденицы
-x = number//10 # десятки
+i = number % 10 # еденицы
+x = number // 10 # десятки
 roman = ''
 
-# Вычисляем десятки
+# Вычисляем десяткиз
 if x <=3:
+
     roman += 'X' * x
 elif x == 4:
     roman += 'XL'
